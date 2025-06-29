@@ -1,0 +1,2 @@
+Jun 29, 2025 10:25:10 PM com.sms.dao.StudentDaoImpl addStudent
+SEVERE: Error adding student: The url cannot be null
