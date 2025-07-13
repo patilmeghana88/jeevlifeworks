@@ -23,9 +23,14 @@ public class UserController {
     private final AuthenticationManager authenticationManager;
 
     @PostMapping("/register")
-    public ResponseEntity<User> register(@RequestBody User user) {
-        return ResponseEntity.ok(userService.save(user));
+    public ResponseEntity<?> register(@RequestBody User user) {
+        if (userService.existsByUsername(user.getUsername())) {
+            return ResponseEntity.status(409).body("Username already exists");
+        }
+        User savedUser = userService.save(user);
+        return ResponseEntity.ok(savedUser);
     }
+
 
 
     @PostMapping("/login")
