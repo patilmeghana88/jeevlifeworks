@@ -6,7 +6,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="Week1/src"/>
-	<classpathentry kind="src" path="Week6EmployeeManagementSystem/EmployeeService/src"/>
 	<classpathentry kind="src" path="Week3 - StudentManagementSystem/src"/>
 	<classpathentry kind="src" path="Week2 - LibraryManagementSystem/src"/>
 	<classpathentry kind="output" path="Week1/bin"/>
